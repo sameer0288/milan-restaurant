@@ -207,7 +207,7 @@ export default function HomePage() {
                   <span className="text-[11px] font-black uppercase tracking-[0.4em] text-white/90">Makrana's Finest Dining</span>
                 </motion.div>
 
-                <h1 className="text-6xl md:text-[8.5rem] font-black font-playfair text-white tracking-tighter leading-[0.85] mb-8 drop-shadow-[0_20px_40px_rgba(0,0,0,0.5)]">
+                <h1 className="text-5xl md:text-[6.5rem] font-black font-playfair text-white tracking-tighter leading-[0.85] mb-8 drop-shadow-[0_20px_40px_rgba(0,0,0,0.5)]">
                   Milan <br />
                   <span className="text-transparent bg-clip-text bg-gradient-to-b from-white via-white/80 to-white/40">Restaurant</span>
                 </h1>
@@ -216,7 +216,7 @@ export default function HomePage() {
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.5, duration: 0.8 }}
-                  className="text-xl md:text-3xl text-white/80 mb-14 font-medium max-w-2xl mx-auto leading-relaxed drop-shadow-lg"
+                  className="text-lg md:text-2xl text-white/80 mb-14 font-medium max-w-2xl mx-auto leading-relaxed drop-shadow-lg"
                 >
                   Experience the true essence of <span className="text-white border-b-2 border-primary/50 inline-flex items-center align-bottom mx-1">
                     Traditional
@@ -430,8 +430,8 @@ export default function HomePage() {
             whileInView={{ opacity: 1, y: 0 }}
             className="relative z-10 text-center px-12 py-10 glass-dark rounded-[3rem] border-white/20 shadow-2xl"
           >
-            <div className="flex items-center justify-center gap-6 mb-4">
-              <span className="text-5xl md:text-8xl font-black font-playfair tracking-tighter">I</span>
+            <div className="flex items-center justify-center gap-4 md:gap-6 mb-4">
+              <span className="text-4xl md:text-7xl font-black font-playfair tracking-tighter">I</span>
               <motion.div
                 animate={{
                   scale: [1, 1.2, 1],
@@ -439,9 +439,9 @@ export default function HomePage() {
                 }}
                 transition={{ duration: 0.8, repeat: Infinity, repeatType: "reverse" }}
               >
-                <Heart className="h-16 w-16 md:h-28 md:w-28 text-red-500 fill-red-500 drop-shadow-[0_0_40px_rgba(239,68,68,0.8)]" />
+                <Heart className="h-12 w-12 md:h-24 md:w-24 text-red-500 fill-red-500 drop-shadow-[0_0_40px_rgba(239,68,68,0.8)]" />
               </motion.div>
-              <span className="text-5xl md:text-8xl font-black font-playfair tracking-tighter">Makrana</span>
+              <span className="text-4xl md:text-7xl font-black font-playfair tracking-tighter">Makrana</span>
             </div>
             <div className="flex items-center justify-center gap-4">
               <div className="h-[2px] w-12 bg-white/20" />
@@ -460,7 +460,7 @@ export default function HomePage() {
                   <div className="h-[2px] w-12 bg-primary" />
                   Visual Masterpieces
                 </div>
-                <h2 className="text-5xl md:text-8xl font-black font-playfair text-foreground tracking-tighter leading-[0.9]">
+                <h2 className="text-4xl md:text-7xl font-black font-playfair text-foreground tracking-tighter leading-[0.9]">
                   Capturing the <br /> <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-orange-500">Milan Soul</span>
                 </h2>
                 <p className="text-muted-foreground mt-8 text-xl font-medium max-w-lg leading-relaxed">
@@ -475,26 +475,26 @@ export default function HomePage() {
               </Link>
             </div>
 
-            <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
               <motion.div
-                whileHover={{ y: -15, scale: 1.02 }}
-                className="col-span-2 row-span-2 group relative overflow-hidden rounded-[3.5rem] aspect-square shadow-[0_40px_80px_-20px_rgba(0,0,0,0.15)] border border-border/50 bg-card"
+                whileHover={{ y: -10, scale: 1.01 }}
+                className="md:col-span-2 md:row-span-2 group relative overflow-hidden rounded-[2.5rem] md:rounded-[3.5rem] aspect-square shadow-2xl border border-border/50 bg-card"
               >
-                <div className="absolute inset-0 bg-black/20 group-hover:bg-black/50 transition-colors z-10 duration-500" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent z-10 duration-500 group-hover:via-black/40" />
                 <img
                   src={galleryPreview[0]?.url || "https://vxxoaxdpwzeqoxxkzujh.supabase.co/storage/v1/object/public/images/1739300649713-6.jpg"}
                   className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
                   alt="Milan Ambiance"
                 />
-                <div className="absolute bottom-12 left-12 z-20 text-white">
-                  <div className="text-[10px] font-black uppercase tracking-[0.4em] opacity-60 mb-3">Signature Vibe</div>
-                  <div className="text-4xl md:text-5xl font-black font-playfair leading-tight drop-shadow-2xl">Tradition Meets <br /> Modern Luxury</div>
+                <div className="absolute bottom-10 left-10 right-10 z-20 text-white">
+                  <div className="text-[10px] font-black uppercase tracking-[0.4em] opacity-80 mb-3 text-red-500">Signature Vibe</div>
+                  <div className="text-3xl md:text-5xl font-black font-playfair leading-tight drop-shadow-2xl">Tradition Meets <br /> Modern Luxury</div>
                 </div>
               </motion.div>
 
               <motion.div
-                whileHover={{ y: -10 }}
-                className="group relative overflow-hidden rounded-[3rem] aspect-square shadow-2xl border border-border/50 mt-12 bg-card"
+                whileHover={{ y: -8 }}
+                className="group relative overflow-hidden rounded-[2.5rem] aspect-square shadow-xl border border-border/50 bg-card"
               >
                 <img
                   src={galleryPreview[1]?.url || "https://vxxoaxdpwzeqoxxkzujh.supabase.co/storage/v1/object/public/images/1739300632314-1.jpg"}
@@ -504,8 +504,8 @@ export default function HomePage() {
               </motion.div>
 
               <motion.div
-                whileHover={{ y: -10 }}
-                className="group relative overflow-hidden rounded-[3rem] aspect-square shadow-2xl border border-border/50 bg-card"
+                whileHover={{ y: -8 }}
+                className="group relative overflow-hidden rounded-[2.5rem] aspect-square shadow-xl border border-border/50 bg-card"
               >
                 <img
                   src={galleryPreview[2]?.url || "https://vxxoaxdpwzeqoxxkzujh.supabase.co/storage/v1/object/public/images/1739300644342-4.jpg"}
@@ -515,8 +515,8 @@ export default function HomePage() {
               </motion.div>
 
               <motion.div
-                whileHover={{ y: -10 }}
-                className="group relative overflow-hidden rounded-[3rem] aspect-[3/4] shadow-2xl border border-border/50 -mt-20 lg:col-start-3 bg-card"
+                whileHover={{ y: -8 }}
+                className="group relative overflow-hidden rounded-[2.5rem] aspect-square shadow-xl border border-border/50 bg-card"
               >
                 <img
                   src={galleryPreview[3]?.url || "https://vxxoaxdpwzeqoxxkzujh.supabase.co/storage/v1/object/public/images/1739300638531-3.jpg"}
@@ -526,8 +526,8 @@ export default function HomePage() {
               </motion.div>
 
               <motion.div
-                whileHover={{ y: -10 }}
-                className="group relative overflow-hidden rounded-[3rem] aspect-square shadow-2xl border border-border/50 lg:col-start-4 bg-card"
+                whileHover={{ y: -8 }}
+                className="group relative overflow-hidden rounded-[2.5rem] aspect-square shadow-xl border border-border/50 bg-card"
               >
                 <img
                   src={galleryPreview[4]?.url || "https://vxxoaxdpwzeqoxxkzujh.supabase.co/storage/v1/object/public/images/1739302660001-gallery-image.jpg"}
