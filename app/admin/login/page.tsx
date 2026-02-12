@@ -25,7 +25,10 @@ export default function AdminLoginPage() {
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
         try {
-            if (username === "admin" && await storage.verifyAdmin(password)) {
+            const normalizedUsername = username.trim().toLowerCase();
+            const normalizedPassword = password.trim();
+
+            if (normalizedUsername === "admin" && await storage.verifyAdmin(normalizedPassword)) {
                 sessionStorage.setItem("isAdmin", "true");
                 showToast("Login Successful", "success");
                 router.push("/admin");
@@ -105,6 +108,9 @@ export default function AdminLoginPage() {
                                     onChange={(e) => setUsername(e.target.value)}
                                     className="h-16 pl-16 bg-white/[0.03] border border-white/5 text-white placeholder:text-white/10 rounded-2xl focus:bg-white/[0.07] focus:border-primary/40 focus:ring-0 transition-all text-sm font-black tracking-widest uppercase"
                                     required
+                                    autoCapitalize="none"
+                                    autoCorrect="off"
+                                    spellCheck="false"
                                 />
                             </div>
                         </motion.div>
